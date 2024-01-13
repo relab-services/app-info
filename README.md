@@ -4,9 +4,11 @@ Utility to display app info in browser console.
 
 **Features**
 - 
-- Zero dependencies
-- Dark/light mode support
-- Multiple theme support
+- 🚀 Zero dependencies
+- 🌓 Dark/light mode support
+- 💡 Multiple theme support
+
+![app-info](./docs/demo.png)
 
 ## Usage
 
