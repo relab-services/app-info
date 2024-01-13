@@ -40,6 +40,10 @@ displayAppInfo('My Cool Application', {
 })
 ```
 
+## Themes
+
+![Themes](./docs/themes.png)
+
 ## License
 
 Released under [MIT](/LICENSE) by [Sergey Zwezdin](https://github.com/sergeyzwezdin).
