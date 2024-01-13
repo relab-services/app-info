@@ -4,6 +4,9 @@
   "description": "Utility package to display app info in browser console",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*.*"
+  ],
   "scripts": {
     "start": "serve .",
     "build": "rollup -c",
