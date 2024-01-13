@@ -15,6 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/sergeyzwezdin/app-info.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "console"
   ],
