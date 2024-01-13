@@ -1,0 +1,50 @@
+{
+  "name": "@sergeyzwezdin/app-info",
+  "version": "1.0.0",
+  "description": "Utility package to display app info in browser console",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "start": "serve .",
+    "build": "rollup -c",
+    "prepublish": "npm run build",
+    "lint": "eslint . --ext ts,tsx",
+    "format": "prettier --write \"**/*.ts*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeyzwezdin/app-info.git"
+  },
+  "keywords": [
+    "console"
+  ],
+  "author": "Sergey Zwezdin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergeyzwezdin/app-info/issues"
+  },
+  "homepage": "https://github.com/sergeyzwezdin/app-info#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-terser": "0.4.4",
+    "@rollup/plugin-typescript": "11.1.6",
+    "@sergeyzwezdin/eslint-config": "2.2.1",
+    "@sergeyzwezdin/prettier-config": "1.1.1",
+    "eslint": "8.56.0",
+    "rollup": "4.9.5",
+    "rollup-plugin-delete": "2.0.0",
+    "rollup-plugin-dts": "6.1.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "serve": "14.2.1",
+    "tslib": "2.6.2",
+    "typescript": "5.3.3"
+  },
+  "prettier": "@sergeyzwezdin/prettier-config",
+  "eslintConfig": {
+    "extends": "@sergeyzwezdin/eslint-config/node",
+    "ignorePatterns": [
+      "lib"
+    ]
+  }
+}
