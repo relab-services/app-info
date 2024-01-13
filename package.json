@@ -1,6 +1,6 @@
 {
   "name": "@sergeyzwezdin/app-info",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility package to display app info in browser console",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
