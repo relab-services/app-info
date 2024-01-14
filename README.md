@@ -7,6 +7,7 @@ Utility to display app info in browser console.
 - 🚀 Zero dependencies
 - 🌓 Dark/light mode support
 - 💡 Multiple theme support
+- 💥 Works in SSR environment
 
 ![app-info](./docs/demo.png)
 
