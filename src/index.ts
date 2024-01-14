@@ -55,6 +55,8 @@ export const displayAppInfo = (
         printStartTime?: boolean
     }
 ) => {
+    if (!window.console) return
+
     const theme: Theme = options?.theme ?? 'Zinc'
     const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
