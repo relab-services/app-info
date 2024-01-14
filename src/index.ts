@@ -60,10 +60,13 @@ export const displayAppInfo = (
     const theme: Theme = options?.theme ?? 'Zinc'
     const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
 
-    const maxLength = Object.keys(metadata).reduce<number>((result, current) => Math.max(result, current.length), 0)
+    const maxLength = Object.keys(metadata).reduce<number>((result, current) => Math.max(result, metadata[current]?.trim() ? current.length : 0), 0)
 
-    const items = Object.entries(metadata).reduce<string[]>((result, [title, value]) => [...result, `%c${`${title}:`.padEnd(maxLength + 1)} %c${value}`], [])
-    const itemsCss = Array.from({ length: Object.keys(metadata).length }).reduce<string[]>(
+    const items = Object.entries(metadata).reduce<string[]>(
+        (result, [title, value]) => (title?.trim() && value?.trim() ? [...result, `%c${`${title}:`.padEnd(maxLength + 1)} %c${value}`] : result),
+        []
+    )
+    const itemsCss = Array.from({ length: items.length }).reduce<string[]>(
         result => [...result, itemsTitleCss(theme, isDark), itemsValueCss(theme, isDark)],
         []
     )
