@@ -19,7 +19,8 @@
     "url": "git+https://github.com/relab-services/app-info.git"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "keywords": [
     "console"
