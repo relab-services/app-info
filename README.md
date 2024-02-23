@@ -1,4 +1,4 @@
-# @sergeyzwezdin/app-info
+# @relab/app-info
 
 Utility to display app info in browser console.
 
@@ -13,7 +13,7 @@ Utility to display app info in browser console.
 
 ## Usage
 
-1. `npm install --save @sergeyzwezdin/app-info`
+1. `npm install --save @relab/app-info`
 2. Add `displayAppInfo()` at the start of your app
 ```typescript
 displayAppInfo('My Cool Application', {
